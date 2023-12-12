@@ -228,10 +228,6 @@ void playGame(Node node) {
   }
 }
 
-auto passClass(Coordinate move) { move.row = 10; }
-
-auto passPointer(Coordinate *move) { move->row = 10; }
-
 int main() {
   cout << RESET;
   const int boardSize = 3;
@@ -252,20 +248,3 @@ int main() {
             << std::endl;
   return 0;
 }
-
-// void changePlayerSymbolPassByValue(Player player, char symbol) {
-//   player.symbol = symbol;
-//   cout << "test1" << player.symbol << endl;
-// }
-
-// void changePlayerSymbolPassByRef(Player* player, char symbol) {
-//   player->symbol = symbol;
-//   cout << "test2" << player->symbol << endl;
-// }
-
-// void changePlayerSymbolPassByRef_updateInstance(Player* player, char symbol) {
-//   Player a = *player;
-//   a.symbol = symbol;
-//   cout << "test3" << a.symbol << endl;
-//   cout << "test3" << player->symbol << endl;
-// }
